@@ -21,7 +21,11 @@ protected:
 
 public:
 
-	void Move();
-	void Turn();
+	void Move(int32 Index);
+	void Turn(int32 Index);
+	float TotalDistance = 0.0f;
+	int32 MoveCount = 0;
+	int32 TurnCount = 0;
+	FVector PrevLocation = FVector::ZeroVector;
 
 };
